@@ -42,13 +42,29 @@ ansible all -m copy -a 'src=/local/path dest=/remote/path'
 
 # Получение информации о системе
 ansible all -m setup -a 'filter=ansible_distribution'
+```
+Запуск Playbook:
+```bash
+ansible-playbook -i [Инвентарь] имя_плейбука.yml
 
-# Запуск playbook
-ansible-playbook playbook.yml -i inventory.yml
+# Пример
+ansible-playbook -i inventory.ini monitoring.yml
 ```
 
 ---
 
+### Простой Ansible.cfg
+```bash
+[defaults]
+inventory = ./inventory.ini
+host_key_checking = False
+```
+**Пояснение**: `[defaults]` - это заголовок секции, все параметры, идущие ниже, являются настройками "по умолчанию" для работы Ansible в текущей директории;
+`inventory = ./inventory.ini` - строка указывает Ansible, где именно искать список серверов;
+`host_key_checking = False` - это настройка безопасности SSH, которая сильно упрощает жизнь в локальных сетях. Как это работает? Если 
+`True`: при первом подключении по SSH система спрашиваешь "Вы уверены что хотите доверять этому узлу?" и просит подтверждения. Если сервер переустановили и ключ изменился, SSH заблокирует соединение;
+`False`:  Ansible игнорирует проверку ключей хоста. Он не будет спрашивать подтверждения при первом подключении и не упадет с ошибкой, если ключ сервера изменился.
+Зачем это нужно: полезно для автоматизации, чтобы скрипт не "подвис" в ожидании ответа `yes` в консоли
 ### Инвентарь (inventory)
 
 > [!tip] **Файл hosts** По умолчанию Ansible использует `/etc/ansible/hosts`, но можно задать другой, указав `-i` в команде.
@@ -69,12 +85,30 @@ all:
 ```
 
 #### **Пример inventory.ini**
-
 ```ini
-[webservers]
-web1 ansible_host=192.168.33.11 ansible_user=root
-web2 ansible_host=192.168.33.12 ansible_user=root
+[haproxy_nodes]
+Cloud-HA01 ansible_host=192.168.10.65
+Cloud-HA02 ansible_host=192.168.10.66
+
+[web_nodes]
+Cloud-WEB01 ansible_host=192.168.10.67
+Cloud-WEB02 ansible_host=192.168.10.68
+
+[monitoring]
+cloud-mon
+
+[target_nodes]
+cloud-adm
+
+[all:vars]
+ansible_user=altlinux
 ```
+**Пояснение**: `[haproxy_nodes]`, `[web_nodes]` и тд - группы. Деление на группы происходит, чтобы в плейбуке сказать "Установи Nginx только на `[web_nodes]`";
+`Cloud-HA01`, `Cloud-WEB01` - это Inventory Name. Имя сервера внутри Ansible;
+`ansible_host=192.168.10.65` - переменная, указывающая реальный IP или DNS сервер для подключения;
+`cloud-mon` - ansible_host не указан, поэтому ansible будет пробоваться подключиться напрямую по имени (оно должно резолвиться через /etc/hosts или DNS)
+`[all:vars]` - блок общих переменных для всех групп в этом файле:
+- `ansible_user=altlinux` - говорит Ansible заходить на все серверы под пользователем `altlinux`
 
 ---
 
