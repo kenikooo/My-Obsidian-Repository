@@ -94,10 +94,8 @@ $TTL    86400
                           86400 )    ; Minimum TTL
 
 @       IN      NS      hq-srv.au-team.irpo.
-
-@ IN NS hq-srv.au-team.irpo.
-10 IN PTR br-srv.au-team.irpo.
-1  IN PTR br-rtr.au-team.irpo.
+10      IN      PTR     br-srv.au-team.irpo.
+1       IN      PTR     br-rtr.au-team.irpo.
 ```
 Конфигурируем основные файлы bind'а:
 ```bash

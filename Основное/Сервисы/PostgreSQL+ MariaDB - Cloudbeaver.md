@@ -31,6 +31,12 @@ apt-get install [название пакета] -y
 > GRANT ALL PRIVILEGES ON DATABASE НАЗВАНИЕ_БД TO ИМЯ_ПОЛЬЗОВАТЕЛЯ;
 > exit
 ```
+Инициализация без пароля
+```bash
+su -l postgres -s /bin/sh -c "/usr/bin/initdb --pgdata=/var/lib/pgsql/data"
+```
+- `-l` - выполнение команды под другим пользователем с сохранением текущего сеанса;
+- `-s` - указываем командную облочку;
 ### > MariaDB
 >[!BUG] Запуск службы
 ```
