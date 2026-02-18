@@ -64,6 +64,20 @@
             }
           },
           {
+            "id": "511ad878e43513f8",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "HUB.md",
+                "mode": "source",
+                "source": false
+              },
+              "icon": "lucide-file",
+              "title": "HUB"
+            }
+          },
+          {
             "id": "39dcf79b48affa3d",
             "type": "leaf",
             "state": {
@@ -74,7 +88,7 @@
             }
           }
         ],
-        "currentTab": 3
+        "currentTab": 4
       }
     ],
     "direction": "vertical"
@@ -219,18 +233,22 @@
       "obsidian-git:Open Git source control": false
     }
   },
-  "active": "50457efff079c0b6",
+  "active": "511ad878e43513f8",
   "lastOpenFiles": [
+    "Основное/Разное/ГИА ДЭ.md",
+    "HUB.md",
+    "Основное/Задания/КОД 09.02.06-1-2026 Том 1.pdf",
+    "Основное/Сервисы/Zabbix.md",
+    "Основное/Сервисы/DHCP-Server.md",
+    "Основное/Протоколы/NFS.md",
     "Основное/Сервисы/Samba AD.md",
     "Основное/Протоколы/NTP.md",
     "Основное/Сервисы/DHCP Eco x BIND.md",
-    "Основное/Сервисы/DHCP-Server.md",
     "Основное/Операционные системы/Cisco.md",
     "Основное/Операционные системы/ALT Linux.md",
     "Основное/Задания/РосАтом2025.md",
     "Основное/Разное/РосАтом.md",
     "Основное/Сервисы/Ansible.md",
-    "HUB.md",
     "Основное/Задания/Профессионалы Облачные технологии 2026.md",
     "Основное/Сервисы/Free Range Routing.md",
     "Основное/Сервисы/Центр сертификации.md",
@@ -241,12 +259,8 @@
     "Основное/Сервисы/Terraform x Openstack.md",
     "Основное/Сервисы/WireGuard.md",
     "Основное/Сервисы/Grafana + Prometheus.md",
-    "Основное/Сервисы/Zabbix.md",
     "Вав.md",
     "Основное/Сервисы/PostgreSQL.md",
-    "Основное/Протоколы/SSH.md",
-    "Основное/Протоколы/RDP.md",
-    "Профессионалы/Модуль В. Исправленный.md",
     "Основное/Протоколы",
     "Без названия.base",
     "Основное/trash/04_Конкурсное_задание_Облака_v2.pdf",
@@ -263,7 +277,6 @@
     "Основное/trash/Pasted image 20260128012355.png",
     "Основное/trash/Pasted image 20260128012108.png",
     "~$_Конкурсное_задание_Облака_v2.docx",
-    "~$-Конкурсное-заданиеv4.docx",
     "Основное/trash/Pasted image 20250319163336.png",
     "Без названия.canvas",
     "Основное/trash/L3.png",
