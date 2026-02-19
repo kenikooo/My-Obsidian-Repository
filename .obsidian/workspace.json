@@ -27,12 +27,12 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Основное/Задания/Профессионалы Облачные технологии 2026.md",
+                "file": "Основное/Разное/Настройка подинтерфейсов.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "Профессионалы Облачные технологии 2026"
+              "title": "Настройка подинтерфейсов"
             }
           },
           {
@@ -55,12 +55,12 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Основное/Протоколы/NFS.md",
+                "file": "Основное/Сервисы/DHCP Eco x BIND.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "NFS"
+              "title": "DHCP Eco x BIND"
             }
           },
           {
@@ -69,12 +69,12 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "HUB.md",
+                "file": "Основное/Сервисы/DHCP Eco x BIND.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "HUB"
+              "title": "DHCP Eco x BIND"
             }
           },
           {
@@ -237,25 +237,25 @@
   "lastOpenFiles": [
     "Основное/Разное/ГИА ДЭ.md",
     "HUB.md",
+    "Основное/Сервисы/DHCP Eco x BIND.md",
+    "Основное/Сервисы/DHCP-Server.md",
+    "Основное/Сервисы/PostgreSQL+ MariaDB - Cloudbeaver.md",
+    "Основное/Протоколы/NFS.md",
+    "Основное/Разное/Настройка подинтерфейсов.md",
+    "Основное/Задания/Профессионалы Облачные технологии 2026.md",
     "Основное/Задания/КОД 09.02.06-1-2026 Том 1.pdf",
     "Основное/Сервисы/Zabbix.md",
-    "Основное/Сервисы/DHCP-Server.md",
-    "Основное/Протоколы/NFS.md",
     "Основное/Сервисы/Samba AD.md",
     "Основное/Протоколы/NTP.md",
-    "Основное/Сервисы/DHCP Eco x BIND.md",
     "Основное/Операционные системы/Cisco.md",
     "Основное/Операционные системы/ALT Linux.md",
     "Основное/Задания/РосАтом2025.md",
     "Основное/Разное/РосАтом.md",
     "Основное/Сервисы/Ansible.md",
-    "Основное/Задания/Профессионалы Облачные технологии 2026.md",
     "Основное/Сервисы/Free Range Routing.md",
     "Основное/Сервисы/Центр сертификации.md",
-    "Основное/Разное/Настройка подинтерфейсов.md",
     "Основное/Сервисы/Кибер Бэкап.md",
     "Основное/Сервисы/OpenVSwitch.md",
-    "Основное/Сервисы/PostgreSQL+ MariaDB - Cloudbeaver.md",
     "Основное/Сервисы/Terraform x Openstack.md",
     "Основное/Сервисы/WireGuard.md",
     "Основное/Сервисы/Grafana + Prometheus.md",
