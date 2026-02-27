@@ -8,87 +8,32 @@
         "type": "tabs",
         "children": [
           {
-            "id": "87929344235814a5",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "Основное/Разное/Кластер высокой доступности Kubernetes в ОС - Альт.md",
-                "mode": "source",
-                "source": false
-              },
-              "icon": "lucide-file",
-              "title": "Кластер высокой доступности Kubernetes в ОС - Альт"
-            }
-          },
-          {
-            "id": "0d7da60a7b68a357",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "Основное/Разное/Настройка подинтерфейсов.md",
-                "mode": "source",
-                "source": false
-              },
-              "icon": "lucide-file",
-              "title": "Настройка подинтерфейсов"
-            }
-          },
-          {
-            "id": "21c5ad22aebcfb0c",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "Основное/Задания/Профессионалы Облачные технологии 2026.md",
-                "mode": "preview",
-                "source": false
-              },
-              "icon": "lucide-file",
-              "title": "Профессионалы Облачные технологии 2026"
-            }
-          },
-          {
-            "id": "50457efff079c0b6",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "Основное/Сервисы/DHCP Eco x BIND.md",
-                "mode": "source",
-                "source": false
-              },
-              "icon": "lucide-file",
-              "title": "DHCP Eco x BIND"
-            }
-          },
-          {
-            "id": "511ad878e43513f8",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "Основное/Сервисы/DHCP Eco x BIND.md",
-                "mode": "source",
-                "source": false
-              },
-              "icon": "lucide-file",
-              "title": "DHCP Eco x BIND"
-            }
-          },
-          {
             "id": "39dcf79b48affa3d",
             "type": "leaf",
             "state": {
-              "type": "graph",
-              "state": {},
-              "icon": "lucide-git-fork",
-              "title": "Граф"
+              "type": "markdown",
+              "state": {
+                "file": "Основное/Разное/ГИА ДЭ.md",
+                "mode": "source",
+                "source": false
+              },
+              "icon": "lucide-file",
+              "title": "ГИА ДЭ"
+            }
+          },
+          {
+            "id": "cef5badf411b7546",
+            "type": "leaf",
+            "state": {
+              "type": "pdf",
+              "state": {
+                "file": "Основное/Задания/КОД 09.02.06-1-2026 Том 1.pdf"
+              },
+              "icon": "lucide-file-text",
+              "title": "КОД 09.02.06-1-2026 Том 1"
             }
           }
-        ],
-        "currentTab": 4
+        ]
       }
     ],
     "direction": "vertical"
@@ -233,17 +178,18 @@
       "obsidian-git:Open Git source control": false
     }
   },
-  "active": "511ad878e43513f8",
+  "active": "39dcf79b48affa3d",
   "lastOpenFiles": [
+    "Основное/Задания/КОД 09.02.06-1-2026 Том 1.pdf",
     "Основное/Разное/ГИА ДЭ.md",
     "HUB.md",
+    "Основное/Разное/Кластер высокой доступности Kubernetes в ОС - Альт.md",
     "Основное/Сервисы/DHCP Eco x BIND.md",
+    "Основное/Задания/Профессионалы Облачные технологии 2026.md",
+    "Основное/Разное/Настройка подинтерфейсов.md",
     "Основное/Сервисы/DHCP-Server.md",
     "Основное/Сервисы/PostgreSQL+ MariaDB - Cloudbeaver.md",
     "Основное/Протоколы/NFS.md",
-    "Основное/Разное/Настройка подинтерфейсов.md",
-    "Основное/Задания/Профессионалы Облачные технологии 2026.md",
-    "Основное/Задания/КОД 09.02.06-1-2026 Том 1.pdf",
     "Основное/Сервисы/Zabbix.md",
     "Основное/Сервисы/Samba AD.md",
     "Основное/Протоколы/NTP.md",
@@ -260,7 +206,6 @@
     "Основное/Сервисы/WireGuard.md",
     "Основное/Сервисы/Grafana + Prometheus.md",
     "Вав.md",
-    "Основное/Сервисы/PostgreSQL.md",
     "Основное/Протоколы",
     "Без названия.base",
     "Основное/trash/04_Конкурсное_задание_Облака_v2.pdf",
