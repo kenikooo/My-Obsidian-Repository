@@ -17,18 +17,19 @@
 11. [[#Проверка и отладка]]
 12. [[#Настройка GRE-Туннеля]]
 13. [[#Настройка NetFlow (Анализ трафика)]]
+14. [[#Настройка IP-Телефонии]]
 
 ---
 ## Базовая настройка устройства
 
 ```bash
 hostname [Имя устройства]  
-# Устанавливает имя устройства.
+# Устанавливает имя устройства
 ```
 
 ```bash
 enable secret P@ssw0rd  
-# Устанавливает защищённый пароль для привилегированного режима.
+# Устанавливает защищенный пароль для привилегированного режима
 ```
 
 ```bash
@@ -36,7 +37,7 @@ line vty 0 4-15
 password P@ssw0rd  
 login  
 exit  
-# Настройка пароля для удалённого доступа (Telnet/SSH).
+# Настройка пароля для удаленного доступа (Telnet/SSH)
 ```
 
 ```bash
@@ -44,35 +45,35 @@ line console 0
 password P@ssw0rd  
 login  
 exit  
-# Настройка пароля для консольного подключения.
+# Настройка пароля для консольного подключения
 ```
 
 ```bash
 service password encryption  
-# Включает шифрование всех паролей в конфигурации.
+# Включаем шифрование всех паролей в конфигурации
 ```
 
 ```bash
 banner motd 'Введите текст'  
-# Устанавливает текст приветственного баннера (Message of the Day).
+# Устанавливаем текст приветственного баннера
 ```
 
 ```bash
 show running config  
-# Просмотр текущей конфигурации устройства.
+# Вывод текущей конфигурации устройства
 ```
 ---
 ### Очистка и сохранение конфигурации
 ```bash
 erase startup config  
-# Удаляет сохранённую конфигурацию.
+# Удаляем сохраненную конфигурацию
 ```
 
 ```bash
 copy running-config startup-config  
 write  
 wr  
-# Сохраняет текущую конфигурацию в память.
+# Сохраняем текущую конфигурацию в память
 ```
 ---
 ### Настройка VLAN
@@ -80,12 +81,12 @@ wr
 interface vlan 1  
 ip address 192.168.100.10 255.255.255.0  
 no shutdown  
-# Назначает IP-адрес для VLAN 1 и активирует её.
+# Назначаем IP-адрес для VLAN 1 и активируем ее
 ```
 
 ```bash
 show ip interface  
-# Показывает состояние интерфейсов и их IP-адреса.
+# Показываем состояние интерфейсов и их IP-адреса
 ```
 
 ```bash
@@ -107,22 +108,22 @@ interface FastEthernet0/24
 switchport mode trunk  
 switchport trunk allowed vlan 10,20,30  
 no shutdown  
-# Создаёт VLAN, назначает их на порты и настраивает trunk-порт.
+# Создаем VLAN, назначаем их на порты и настраиваем trunk-порт
 
 ```
 ---
 ### Spanning Tree (STP)
 ```bash
 spanning-tree vlan VLAN-ID root primary  
-# Настраивает приоритет STP для указанного VLAN как primary.
+# Настраиваем приоритет STP для указанного VLAN как primary
 ```
 
 ```bash
 spanning-tree vlan VLAN-ID priority value  
-# Задаёт приоритет для указанного VLAN.  
+# Задаем приоритет для указанного VLAN
 # Пример:
 spanning-tree vlan 1 priority 24576  
-# Приоритет в диапазоне от 0 до 61440.
+# Приоритет в диапазоне от 0 до 61440
 ```
 Пример использования:
 ```bash
@@ -138,12 +139,12 @@ interface FastEthernet0/11
 spanning-tree portfast  
 spanning-tree bpguard enable  
 end  
-# Включает PortFast и защиту BPDU на порту.
+# Включаем PortFast и защиту BPDU на порту
 ```
 Проверка:
 ```bash
 show spanning tree  
-# Показывает состояние Spanning Tree.
+# Вывод состояния Spanning Tree
 ```
 ---
 ### DHCP
@@ -155,7 +156,7 @@ default-router 192.168.10.1
 dns-server 8.8.8.8  
 
 ip dhcp excluded-address 192.168.10.1  
-# Настраивает DHCP-сервер с исключёнными адресами.
+# Настраиваем DHCP-сервер с исключенными адресами
 ```
 ---
 ### NAT
@@ -173,7 +174,7 @@ no shutdown
 access-list 1 permit 192.168.0.0 0.0.255.255  
 
 ip nat inside source list 1 interface FastEthernet0/0 overload  
-# Настраивает NAT (перегрузка).
+# Настраиваем NAT (перегрузка)
 ```
 Проверка NAT
 ```bash
@@ -184,14 +185,14 @@ show ip nat statistics
 ### Настройка SSH
 ```bash
 ip domain-name mydomain.local  
-# Устанавливает доменное имя устройства.
+# Устанавливаем доменное имя устройства
 
 crypto key generate rsa  
-# Генерирует RSA-ключ для SSH (рекомендуется ключ длиной 2048).  
-# При запросе длины ключа укажите: 2048.
+# Генерируем RSA-ключ для SSH (рекомендуется ключ длиной 2048). 
+# При запросе длины ключа указываем: 2048
 
 ip ssh version 2  
-# Включает использование SSH версии 2.
+# Включаем использование SSH версии 2
 
 line vty 0 4  
 transport input ssh  
@@ -199,32 +200,32 @@ login local
 exit  
 
 username admin privilege 15 password P@ssw0rd  
-# Создаёт пользователя `admin` с максимальным уровнем доступа.
+# Создаем пользователя `admin` с максимальным уровнем доступа
 ```
 ---
 ### Настройка NTP(синхронизация времени)
 ```bash
 ntp server 192.168.1.1  
-# Указывает NTP-сервер для синхронизации времени.
+# Указываем NTP-сервер для синхронизации времени
 
 clock timezone UTC +3  
-# Устанавливает часовой пояс.
+# Устанавливаем часовой пояс
 
 show ntp status  
-# Проверка синхронизации с NTP-сервером.
+# Проверяем синхронизацию с NTP-сервером
 ```
 ---
 ### Настройка SNMP (Мониторинг устройства)
 ```bash
 snmp-server community public RO  
-# Устанавливает строку сообщества для чтения (`public`).
+# Устанавливаем строку сообщества для чтения (`public`)
 
 snmp-server location ServerRoom  
 snmp-server contact admin@mydomain.local  
-# Добавляет описание местоположения и контакт администратора.
+# Добавляем описание местоположения и контакт администратора
 
 snmp-server enable traps  
-# Включает отправку SNMP-уведомлений.
+# Включаем отправку SNMP-уведомлений
 ```
 ---
 ### Настройка Port Security(Безопасность портов)
@@ -232,34 +233,34 @@ snmp-server enable traps
 interface FastEthernet0/1  
 switchport port-security  
 switchport port-security maximum 2  
-# Ограничивает число устройств, подключаемых к порту (до 2).  
+# Ограничиваем число устройств, подключаемых к порту (до 2)
 
 switchport port-security mac-address sticky  
-# Позволяет автоматически сохранять MAC-адреса подключённых устройств.
+# Позволяем автоматически сохранять MAC-адреса подключённых устройств
 
 switchport port-security violation shutdown  
-# Отключает порт при нарушении правил.
+# Отключаем порт при нарушении правил
 
 show port-security  
-# Проверяет статус Port Security.
+# Проверяем статус Port Security
 ```
 ---
 ### Проверка и отладка
 ```bash
 show version  
-# Отображает информацию об устройстве и его работе.
+# Вывод информации об устройстве и его работе
 
 show ip interface brief  
-# Показывает состояние интерфейсов и IP-адреса.
+# Вывод состояния интерфейсов и IP-адреса
 
 show logging  
-# Показывает логи системы.
+# Вывод логов системы
 
 debug ip nat  
-# Включает отладку NAT (осторожно, может замедлить работу устройства).
+# Включаем отладку NAT (осторожно, может замедлить работу устройства)
 
 undebug all  
-# Отключает отладку.
+# Отключаем отладку
 ```
 ---
 ### Настройка GRE-Туннеля
@@ -272,7 +273,7 @@ ip address 192.168.1.1 255.255.255.252
 tunnel source 203.0.113.1  
 tunnel destination 198.51.100.1  
 no shutdown  
-# Создаёт туннель, задаёт IP-адрес, исходный и целевой IP для туннеля.
+# Создаем туннель, задаем ему IP-адрес, исходный и целевой IP для туннеля
 ```
 Устройство Б
 ```bash
@@ -281,18 +282,18 @@ ip address 192.168.1.2 255.255.255.252
 tunnel source 198.51.100.1  
 tunnel destination 203.0.113.1  
 no shutdown  
-# Создаёт туннель на удалённом конце.
+# Создаем туннель на удаленном конце
 ```
 Проверка состояния туннеля
 ```bash
 show ip interface brief | include Tunnel  
-# Показывает состояние туннельного интерфейса.
+# Выводим состояние туннельного интерфейса
 
 show run interface Tunnel0  
-# Проверяет настройки туннеля.
+# Проверяем настройки туннеля
 
 ping 192.168.1.2 source 192.168.1.1  
-# Тестирует туннель.
+# Тестируем туннель
 ```
 ---
 ### Настройка NetFlow (Анализ трафика)
@@ -300,18 +301,100 @@ ping 192.168.1.2 source 192.168.1.1
 ip flow-export destination 192.168.1.100 9996  
 ip flow-export version 9  
 ip flow-export source FastEthernet0/0  
-# Настраивает экспорт NetFlow на сервер.
+# Настраиваем экспорт NetFlow на сервер
 
 interface FastEthernet0/0  
 ip flow ingress  
 ip flow egress  
-# Включает сбор данных NetFlow на интерфейсе.
+# Включаем сбор данных NetFlow на интерфейсе
 
 show ip cache flow  
-# Показывает текущие данные NetFlow.
+# Вывод текущих данных NetFlow
 ```
 ---
+### Настройка IP-Телефонии
+Активируем DHCP
+```bash
+service dhcp
+```
+Вешаем IP-Адрес на интерфейс
+```bash
+interface <имя>
+ip address <RTR-IP> <SUBNET>
+no shutdown
+```
+Исключаем наш адрес из выдачи DHCP
+```bash
+ip dhcp excluded-address <RTR-IP>
+```
+Создаем пул
+```bash
+ip dhcp pool phones
+	network 192.168.10.0 255.255.255.0
+	default-router <RTR-IP>
+	option 150 ip <RTR-IP>
+```
+Активируем функции IP-Телефонии
+```bash
+telephony-service
+max-ephones 10 # Макс. кол-во поддерживаемых телефонов
+max-dn 10 # Макс. кол-во поддерживаемых номеров
+ip source-address <RTR-IP> port 2000
+auto assign 1 to 10
+```
+Задаем номер
+```bash
+ephone-dn 1
+number 1668
+```
 
+> Все что ниже делается в `DHCP (Option 150)`
+
+Разрешаем звонок
+```bash
+1 voice service voip
+	allow-connection sip to sip
+	registrar server express max 3600 min 3600
+```
+Активируем набор codec'ов
+```bash
+2 voice class codec 1 # Объединяет кодеки
+	codec preference 1 g711alaw # g711alaw самый распространенный
+	codec preference 1 g711ulaw # Для Европеской (Америнканские стандарты) связи
+	codec preference 3 g729br8
+```
+Настройка телефонной станции
+```bash
+3 voice register global
+	mode cme
+	source-address <RTR-IP> port 5060 # Порт для SIP
+	max-dn 50
+	max-pool 50
+```
+Регистрация телефонов и софт-фонов
+```bash
+4 voice register dn 1
+	number <Придумайте-Номер>
+```
+Регистрируем пул
+```bash
+vouce register pool 1
+	id mac AAAA.DDDD.CCCC.DDDD # Формат Cisco
+# Привязываем номер к пулу
+	number 1 dn 1
+# Привязываем набор codec
+	voice class codec 1
+# Указать имя пользователя и пароль
+	username test password Passw0rd # Вместо test указывается пользователь, который будет звонить. Именно пароль Passw0rd проходит (не через @)
+```
+
+>[!INFO] Для Windows
+> [`MicroSIP`](https://help.mobilon.ru/equipment/softphones/microsip/)
+
+> [!WARNING] Для Linux
+> [`LinPhone`](https://redos.red-soft.ru/base/redos-7_3/7_3-users-tasks/7_3-chat/7_3-linphone/)
+
+---
 ```bash
 
 ```
@@ -319,4 +402,9 @@ show ip cache flow
 ```bash
 
 ```
+
+```bash
+
+```
+
 ---

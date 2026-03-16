@@ -13,27 +13,44 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Основное/Разное/ГИА ДЭ.md",
+                "file": "Основное/Протоколы/NFS.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "ГИА ДЭ"
+              "title": "NFS"
             }
           },
           {
-            "id": "cef5badf411b7546",
+            "id": "c4015811d53addbf",
             "type": "leaf",
             "state": {
-              "type": "pdf",
+              "type": "markdown",
               "state": {
-                "file": "Основное/Задания/КОД 09.02.06-1-2026 Том 1.pdf"
+                "file": "Основное/Сервисы/FreeIPA.md",
+                "mode": "source",
+                "source": false
               },
-              "icon": "lucide-file-text",
-              "title": "КОД 09.02.06-1-2026 Том 1"
+              "icon": "lucide-file",
+              "title": "FreeIPA"
+            }
+          },
+          {
+            "id": "c4d7ca2ea4100e2a",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "HUB.md",
+                "mode": "source",
+                "source": false
+              },
+              "icon": "lucide-file",
+              "title": "HUB"
             }
           }
-        ]
+        ],
+        "currentTab": 2
       }
     ],
     "direction": "vertical"
@@ -178,22 +195,27 @@
       "obsidian-git:Open Git source control": false
     }
   },
-  "active": "39dcf79b48affa3d",
+  "active": "c4d7ca2ea4100e2a",
   "lastOpenFiles": [
-    "Основное/Задания/КОД 09.02.06-1-2026 Том 1.pdf",
-    "Основное/Разное/ГИА ДЭ.md",
+    "Основное/Сервисы/FreeIPA.md",
+    "Основное/Сервисы/firewalld.md",
+    "Основное/Сервисы/Terraform x Openstack.md",
+    "Основное/Задания/Облачные технологии 2026 Регион.md",
+    "Основное/Протоколы/NFS.md",
     "HUB.md",
+    "Основное/Задания/Облачные технологии 2026 Межрегиональное.md",
+    "Основное/trash/04-Конкурсное-задание v003.pdf",
+    "Основное/Операционные системы/Cisco.md",
+    "Основное/Разное/ГИА ДЭ.md",
+    "Основное/Задания/КОД 09.02.06-1-2026 Том 1.pdf",
     "Основное/Разное/Кластер высокой доступности Kubernetes в ОС - Альт.md",
     "Основное/Сервисы/DHCP Eco x BIND.md",
-    "Основное/Задания/Профессионалы Облачные технологии 2026.md",
     "Основное/Разное/Настройка подинтерфейсов.md",
     "Основное/Сервисы/DHCP-Server.md",
     "Основное/Сервисы/PostgreSQL+ MariaDB - Cloudbeaver.md",
-    "Основное/Протоколы/NFS.md",
     "Основное/Сервисы/Zabbix.md",
     "Основное/Сервисы/Samba AD.md",
     "Основное/Протоколы/NTP.md",
-    "Основное/Операционные системы/Cisco.md",
     "Основное/Операционные системы/ALT Linux.md",
     "Основное/Задания/РосАтом2025.md",
     "Основное/Разное/РосАтом.md",
@@ -202,10 +224,7 @@
     "Основное/Сервисы/Центр сертификации.md",
     "Основное/Сервисы/Кибер Бэкап.md",
     "Основное/Сервисы/OpenVSwitch.md",
-    "Основное/Сервисы/Terraform x Openstack.md",
     "Основное/Сервисы/WireGuard.md",
-    "Основное/Сервисы/Grafana + Prometheus.md",
-    "Вав.md",
     "Основное/Протоколы",
     "Без названия.base",
     "Основное/trash/04_Конкурсное_задание_Облака_v2.pdf",
@@ -221,7 +240,6 @@
     "Основное/trash/Pasted image 20260128012635.png",
     "Основное/trash/Pasted image 20260128012355.png",
     "Основное/trash/Pasted image 20260128012108.png",
-    "~$_Конкурсное_задание_Облака_v2.docx",
     "Основное/trash/Pasted image 20250319163336.png",
     "Без названия.canvas",
     "Основное/trash/L3.png",
