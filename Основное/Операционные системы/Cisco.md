@@ -181,6 +181,28 @@ ip nat inside source list 1 interface FastEthernet0/0 overload
 show ip nat translations  
 show ip nat statistics
 ```
+#### Более подробно
+Размечаем интерфейсы
+```bash
+interface gi1 # Настраиваем внешний интерфейс
+ip nat outside
+interface gi2 # Настраиваем внутренний интерфейс
+ip nat inside
+```
+Настраиваем трансляцию сетей (ACL)
+```bash
+access-list 1 permit 192.168.100.0 0.0.0.255
+```
+- Цифра 1 - номер списка (может быть любым)
+Включаем NAT
+```bash
+ip nat inside source list 1 interface gi1 overload
+```
+Расшифровка:
+- `inside source` - транслируем изнутри наружу
+- `list 1` - используем ACL номер 1
+- `interface gi2` - через внешний интерфейс
+- `overload` - PAT (много клиентов - один IP)
 ---
 ### Настройка SSH
 ```bash
@@ -352,29 +374,35 @@ number 1668
 
 Разрешаем звонок
 ```bash
-1 voice service voip
-	allow-connection sip to sip
-	registrar server express max 3600 min 3600
+voice service voip
+ allow-connections sip to sip
+ sip
+  registrar server expires max 3600 min 3600
+ exit
 ```
 Активируем набор codec'ов
 ```bash
-2 voice class codec 1 # Объединяет кодеки
+voice class codec 1 # Объединяет кодеки
 	codec preference 1 g711alaw # g711alaw самый распространенный
 	codec preference 1 g711ulaw # Для Европеской (Америнканские стандарты) связи
 	codec preference 3 g729br8
+	
 ```
 Настройка телефонной станции
 ```bash
-3 voice register global
+voice register global
 	mode cme
 	source-address <RTR-IP> port 5060 # Порт для SIP
 	max-dn 50
 	max-pool 50
+	authenticate realm cisco.com
+	create profile
 ```
 Регистрация телефонов и софт-фонов
 ```bash
-4 voice register dn 1
+voice register dn 1
 	number <Придумайте-Номер>
+	label Linphone-User # Тексовая подпись для линии в ip-телефонии
 ```
 Регистрируем пул
 ```bash

@@ -8,49 +8,31 @@
         "type": "tabs",
         "children": [
           {
-            "id": "39dcf79b48affa3d",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "Основное/Протоколы/NFS.md",
-                "mode": "source",
-                "source": false
-              },
-              "icon": "lucide-file",
-              "title": "NFS"
-            }
-          },
-          {
             "id": "c4015811d53addbf",
             "type": "leaf",
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Основное/Сервисы/FreeIPA.md",
+                "file": "Основное/Сервисы/Linphone.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "FreeIPA"
+              "title": "Linphone"
             }
           },
           {
-            "id": "c4d7ca2ea4100e2a",
+            "id": "e46a43f67a5b2f14",
             "type": "leaf",
             "state": {
-              "type": "markdown",
-              "state": {
-                "file": "HUB.md",
-                "mode": "source",
-                "source": false
-              },
-              "icon": "lucide-file",
-              "title": "HUB"
+              "type": "graph",
+              "state": {},
+              "icon": "lucide-git-fork",
+              "title": "Граф"
             }
           }
         ],
-        "currentTab": 2
+        "currentTab": 1
       }
     ],
     "direction": "vertical"
@@ -195,36 +177,37 @@
       "obsidian-git:Open Git source control": false
     }
   },
-  "active": "c4d7ca2ea4100e2a",
+  "active": "e46a43f67a5b2f14",
   "lastOpenFiles": [
+    "HUB.md",
+    "Основное/Сервисы/Linphone.md",
+    "Основное/Операционные системы/Cisco.md",
+    "Основное/trash/Pasted image 20260317171904.png",
+    "Основное/Сервисы/Ansible.md",
+    "Основное/Разное/ГИА ДЭ.md",
+    "Основное/Операционные системы/ALT Linux.md",
+    "Основное/Сервисы/DHCP-Server.md",
+    "Основное/Сервисы/Gitea.md",
+    "Основное/Сервисы/Free Range Routing.md",
     "Основное/Сервисы/FreeIPA.md",
+    "Основное/Задания/Облачные технологии 2026 Межрегиональное.md",
+    "Основное/Сервисы/Кибер Бэкап.md",
+    "Основное/Разное/Лабораторные работы IDECO NGFW.md",
+    "Основное/trash/Pasted image 20260317092607.png",
+    "Основное/Задания/Облачные технологии 2026 Регион.md",
+    "Основное/Задания/Практика 08.12.2025.md",
+    "Основное/Задания/Задание по УППМ.03.ЭОСИ.md",
     "Основное/Сервисы/firewalld.md",
     "Основное/Сервисы/Terraform x Openstack.md",
-    "Основное/Задания/Облачные технологии 2026 Регион.md",
     "Основное/Протоколы/NFS.md",
-    "HUB.md",
-    "Основное/Задания/Облачные технологии 2026 Межрегиональное.md",
     "Основное/trash/04-Конкурсное-задание v003.pdf",
-    "Основное/Операционные системы/Cisco.md",
-    "Основное/Разное/ГИА ДЭ.md",
     "Основное/Задания/КОД 09.02.06-1-2026 Том 1.pdf",
     "Основное/Разное/Кластер высокой доступности Kubernetes в ОС - Альт.md",
     "Основное/Сервисы/DHCP Eco x BIND.md",
     "Основное/Разное/Настройка подинтерфейсов.md",
-    "Основное/Сервисы/DHCP-Server.md",
     "Основное/Сервисы/PostgreSQL+ MariaDB - Cloudbeaver.md",
     "Основное/Сервисы/Zabbix.md",
     "Основное/Сервисы/Samba AD.md",
-    "Основное/Протоколы/NTP.md",
-    "Основное/Операционные системы/ALT Linux.md",
-    "Основное/Задания/РосАтом2025.md",
-    "Основное/Разное/РосАтом.md",
-    "Основное/Сервисы/Ansible.md",
-    "Основное/Сервисы/Free Range Routing.md",
-    "Основное/Сервисы/Центр сертификации.md",
-    "Основное/Сервисы/Кибер Бэкап.md",
-    "Основное/Сервисы/OpenVSwitch.md",
-    "Основное/Сервисы/WireGuard.md",
     "Основное/Протоколы",
     "Без названия.base",
     "Основное/trash/04_Конкурсное_задание_Облака_v2.pdf",
@@ -241,8 +224,6 @@
     "Основное/trash/Pasted image 20260128012355.png",
     "Основное/trash/Pasted image 20260128012108.png",
     "Основное/trash/Pasted image 20250319163336.png",
-    "Без названия.canvas",
-    "Основное/trash/L3.png",
-    "Основное/trash/L1.png"
+    "Без названия.canvas"
   ]
 }
