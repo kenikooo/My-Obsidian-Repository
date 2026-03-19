@@ -4,45 +4,21 @@
     "type": "split",
     "children": [
       {
-        "id": "762a16ce2d7ce274",
+        "id": "19ece79f40f0a5f1",
         "type": "tabs",
         "children": [
           {
-            "id": "c4015811d53addbf",
+            "id": "7bd9dd86068c74a1",
             "type": "leaf",
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Основное/Операционные системы/Cisco.md",
+                "file": "HUB.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "Cisco"
-            }
-          },
-          {
-            "id": "e46a43f67a5b2f14",
-            "type": "leaf",
-            "state": {
-              "type": "graph",
-              "state": {},
-              "icon": "lucide-git-fork",
-              "title": "Граф"
-            }
-          },
-          {
-            "id": "9dc0230ac63a5a68",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "Основное/Операционные системы/EcoRouter.md",
-                "mode": "source",
-                "source": false
-              },
-              "icon": "lucide-file",
-              "title": "EcoRouter"
+              "title": "HUB"
             }
           }
         ]
@@ -190,46 +166,46 @@
       "obsidian-git:Open Git source control": false
     }
   },
-  "active": "c4015811d53addbf",
+  "active": "7bd9dd86068c74a1",
   "lastOpenFiles": [
+    "Основное/Как работать с Obsidian.md",
     "HUB.md",
-    "Основное/Задания/Облачные технологии 2026 Межрегиональное.md",
-    "Основное/Операционные системы/EcoRouter.md",
-    "Основное/Разное/Облачные технологии 2026 Межрегион. Выполнение модуля А..md",
+    "Основное/Попытки сделать Kubernetes/Кластер высокой доступности Kubernetes в ОС - Альт.md",
+    "Основное/Разное/Настройка подинтерфейсов.md",
+    "Основное/Разное/Proxmox включение XTerm.md",
+    "Основное/Разное/Terraform x Openstack.md",
+    "Основное/Задания/Лабораторные работы IDECO NGFW.md",
+    "Основное/Выполнение заданий/ГИА ДЭ.md",
+    "Основное/Попытки сделать Kubernetes",
+    "Основное/Выполнение заданий",
+    "Основное/Выполнение заданий/РосАтом.md",
+    "Основное/Сервисы/Zabbix.md",
+    "Основное/Сервисы/WireGuard.md",
+    "Основное/Сервисы/Samba AD.md",
+    "Основное/Сервисы/PostgreSQL+ MariaDB - Cloudbeaver.md",
+    "Основное/Сервисы/OpenVSwitch.md",
     "Основное/Сервисы/Linphone.md",
-    "Основное/trash/0. Тестовый стенд_Merged.pdf",
-    "Основное/Операционные системы/Cisco.md",
-    "Основное/trash/Pasted image 20260317171904.png",
-    "Основное/Сервисы/Ansible.md",
-    "Основное/Разное/ГИА ДЭ.md",
-    "Основное/Операционные системы/ALT Linux.md",
-    "Основное/Сервисы/DHCP-Server.md",
     "Основное/Сервисы/Gitea.md",
-    "Основное/Сервисы/Free Range Routing.md",
     "Основное/Сервисы/FreeIPA.md",
-    "Основное/Сервисы/Кибер Бэкап.md",
-    "Основное/Разное/Лабораторные работы IDECO NGFW.md",
-    "Основное/trash/Pasted image 20260317092607.png",
-    "Основное/Задания/Облачные технологии 2026 Регион.md",
-    "Основное/Задания/Практика 08.12.2025.md",
-    "Основное/Задания/Задание по УППМ.03.ЭОСИ.md",
+    "Основное/Сервисы/Free Range Routing.md",
+    "Основное/Сервисы/Docker Registry.md",
     "Основное/Сервисы/firewalld.md",
-    "Основное/Сервисы/Terraform x Openstack.md",
-    "Основное/Протоколы/NFS.md",
+    "Основное/Сервисы/Docker.md",
+    "Основное/Сервисы/DHCP-Server.md",
+    "Основное/Сервисы/Ansible.md",
+    "Основное/Сервисы/DHCP Eco x BIND.md",
+    "Основное/Сервисы/Кибер Бэкап.md",
+    "Основное/Сервисы/Центр сертификации.md",
+    "Основное/trash/0. Тестовый стенд_Merged.pdf",
+    "Основное/trash/Pasted image 20260317171904.png",
+    "Основное/trash/Pasted image 20260317092607.png",
     "Основное/trash/04-Конкурсное-задание v003.pdf",
     "Основное/Задания/КОД 09.02.06-1-2026 Том 1.pdf",
-    "Основное/Разное/Кластер высокой доступности Kubernetes в ОС - Альт.md",
-    "Основное/Сервисы/DHCP Eco x BIND.md",
-    "Основное/Разное/Настройка подинтерфейсов.md",
-    "Основное/Сервисы/PostgreSQL+ MariaDB - Cloudbeaver.md",
-    "Основное/Сервисы/Zabbix.md",
     "Основное/Протоколы",
     "Без названия.base",
     "Основное/trash/04_Конкурсное_задание_Облака_v2.pdf",
     "Основное/trash/04-Конкурсное-заданиеv4.pdf",
     "Основное/trash/Задание на учебную практику.pdf",
-    "04-Конкурсное-заданиеv4.docx",
-    "04_Конкурсное_задание_Облака_v2.docx",
     "Основное/trash/Pasted image 20260204111615.png",
     "Основное/trash/Pasted image 20260204111509.png",
     "Основное/trash/Pasted image 20260128013000.png",

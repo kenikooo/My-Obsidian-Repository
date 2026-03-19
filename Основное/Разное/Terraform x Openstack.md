@@ -1,3 +1,4 @@
+— Перейти в [[HUB]] —
 Содержимое ~/.terraformrc
 ```bash
 provider_installation {
