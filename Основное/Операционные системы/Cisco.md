@@ -395,20 +395,17 @@ voice register global
 	source-address <RTR-IP> port 5060 # Порт для SIP
 	max-dn 50
 	max-pool 50
-	authenticate realm cisco.com
-	create profile
 ```
 Регистрация телефонов и софт-фонов
 ```bash
 voice register dn 1
 	number <Придумайте-Номер>
-	label Linphone-User # Тексовая подпись для линии в ip-телефонии
 ```
 Регистрируем пул
 ```bash
-vouce register pool 1
+voice register pool 1
 	id mac AAAA.DDDD.CCCC.DDDD # Формат Cisco
-# Привязываем номер к пулу
+# Привязываем номер к пулу (указывается любой)
 	number 1 dn 1
 # Привязываем набор codec
 	voice class codec 1

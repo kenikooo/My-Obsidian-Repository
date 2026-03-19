@@ -13,12 +13,12 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Основное/Сервисы/Linphone.md",
+                "file": "Основное/Операционные системы/Cisco.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "Linphone"
+              "title": "Cisco"
             }
           },
           {
@@ -30,9 +30,22 @@
               "icon": "lucide-git-fork",
               "title": "Граф"
             }
+          },
+          {
+            "id": "9dc0230ac63a5a68",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "Основное/Операционные системы/EcoRouter.md",
+                "mode": "source",
+                "source": false
+              },
+              "icon": "lucide-file",
+              "title": "EcoRouter"
+            }
           }
-        ],
-        "currentTab": 1
+        ]
       }
     ],
     "direction": "vertical"
@@ -177,10 +190,14 @@
       "obsidian-git:Open Git source control": false
     }
   },
-  "active": "e46a43f67a5b2f14",
+  "active": "c4015811d53addbf",
   "lastOpenFiles": [
     "HUB.md",
+    "Основное/Задания/Облачные технологии 2026 Межрегиональное.md",
+    "Основное/Операционные системы/EcoRouter.md",
+    "Основное/Разное/Облачные технологии 2026 Межрегион. Выполнение модуля А..md",
     "Основное/Сервисы/Linphone.md",
+    "Основное/trash/0. Тестовый стенд_Merged.pdf",
     "Основное/Операционные системы/Cisco.md",
     "Основное/trash/Pasted image 20260317171904.png",
     "Основное/Сервисы/Ansible.md",
@@ -190,7 +207,6 @@
     "Основное/Сервисы/Gitea.md",
     "Основное/Сервисы/Free Range Routing.md",
     "Основное/Сервисы/FreeIPA.md",
-    "Основное/Задания/Облачные технологии 2026 Межрегиональное.md",
     "Основное/Сервисы/Кибер Бэкап.md",
     "Основное/Разное/Лабораторные работы IDECO NGFW.md",
     "Основное/trash/Pasted image 20260317092607.png",
@@ -207,7 +223,6 @@
     "Основное/Разное/Настройка подинтерфейсов.md",
     "Основное/Сервисы/PostgreSQL+ MariaDB - Cloudbeaver.md",
     "Основное/Сервисы/Zabbix.md",
-    "Основное/Сервисы/Samba AD.md",
     "Основное/Протоколы",
     "Без названия.base",
     "Основное/trash/04_Конкурсное_задание_Облака_v2.pdf",
@@ -215,7 +230,6 @@
     "Основное/trash/Задание на учебную практику.pdf",
     "04-Конкурсное-заданиеv4.docx",
     "04_Конкурсное_задание_Облака_v2.docx",
-    "Профессионалы",
     "Основное/trash/Pasted image 20260204111615.png",
     "Основное/trash/Pasted image 20260204111509.png",
     "Основное/trash/Pasted image 20260128013000.png",
