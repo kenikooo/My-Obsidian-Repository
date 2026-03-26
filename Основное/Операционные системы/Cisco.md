@@ -3,7 +3,7 @@
 > - **enable** — Привилегированный режим `{en}`
 > - **configure terminal** — Режим конфигурации `{conf t}`
 
-> [!INFO] Содержимое
+> [!INFO] Содержание
 1. [[#Базовая настройка устройства]]
 2. [[#Очистка и сохранение конфигурации]]
 3. [[#Настройка VLAN]]
@@ -18,6 +18,7 @@
 12. [[#Настройка GRE-Туннеля]]
 13. [[#Настройка NetFlow (Анализ трафика)]]
 14. [[#Настройка IP-Телефонии]]
+15. [[#Настройка Dial-Plan]]
 
 ---
 ## Базовая настройка устройства
@@ -150,7 +151,7 @@ show spanning tree
 ### DHCP
 ```bash
 service dhcp  
-ip dhcp pool VLAN10  
+ip dhcp pool <Имя пула>  
 network 192.168.10.0 255.255.255.0  
 default-router 192.168.10.1  
 dns-server 8.8.8.8  
@@ -384,7 +385,7 @@ voice service voip
 ```bash
 voice class codec 1 # Объединяет кодеки
 	codec preference 1 g711alaw # g711alaw самый распространенный
-	codec preference 1 g711ulaw # Для Европеской (Америнканские стандарты) связи
+	codec preference 2 g711ulaw # Для Европеской (Америнканские стандарты) связи
 	codec preference 3 g729br8
 	
 ```
@@ -404,7 +405,7 @@ voice register dn 1
 Регистрируем пул
 ```bash
 voice register pool 1
-	id mac AAAA.DDDD.CCCC.DDDD # Формат Cisco
+	id mac AAAA.DDDD.CCCC # Формат Cisco
 # Привязываем номер к пулу (указывается любой)
 	number 1 dn 1
 # Привязываем набор codec
@@ -420,16 +421,29 @@ voice register pool 1
 > [`LinPhone`](https://redos.red-soft.ru/base/redos-7_3/7_3-users-tasks/7_3-chat/7_3-linphone/)
 
 ---
+### Настройка Dial-Plan
+`dial-plan` на пропуск всего
 ```bash
-
+dial-peer voice 10 voip
+session protocol sipv2
+incoming called-number .
 ```
-
+`dial-plan` на удаленную рабочую станцию
 ```bash
-
+dial-peer voice 200 voip
+destination-pattern 2.. 
+session protocol sipv2 
+session target ipv4:192.168.100.2 
+voice-class codec 1 
+dtmf-relay rtp-nte 
 ```
-
+`dial-plan` на внутренние номера
 ```bash
-
+destination-pattern 1
+session protocol sipv2
+session target sip-server
+voice-class codec 1
+dtmf-relay rtp-nte
 ```
 
 ---

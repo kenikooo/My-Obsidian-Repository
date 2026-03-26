@@ -2,34 +2,6 @@
 > [!INFO] Что такое **Bind**?
 Программное обеспечение для DNS-сервера (системы доменных имен)
 
-### Настройка DHCP на Eco Router
-```tex
-> enable
-$ conf t
-(config)# ip pool <НАЗВАНИЕ ПУЛА> 192.168.0.1-192.168.0.255 # пул можно указать другой, это ПРИМЕР
-(config)# dhcp-server 1 или любая другая цифра
-(config-dhcp-server)# lease 3600
-(config-dhcp-server)# dns <DNS-Сервер-IP>
-(config-dhcp-server)# domain-name au-team.irpo
-(config-dhcp-server)# pool <НАЗВАНИЕ-ПУЛА> 10
-(config-dhcp-server-pool)# mask 255.255.255.240 или mask 28
-(config-dhcp-server-pool)# gateway <ШЛЮЗ-IP>
-(config-dhcp-server-pool)# exit
-(config-dhcp-server)# static ip <Адрес из пула, будет назначен статически клиенту>
-(config-dhcp-server-static)# chaddr <МАК-АДРЕС-КЛИЕНТА> # Кому будет присваивать статический IP
-(config-dhcp-server-static)# mask 255.255.255.240 или mask 28 
-(config-dhcp-server-static)# gateway <ШЛЮЗ-IP>
-(config-dhcp-server-static)# dns <DNS-Сервер-IP>
-(config-dhcp-server-static)# exit
-(config-dhcp-server)# exit
-(config)# interface <INT> # Название интерфейса, идущего к клиенту/клиентам
-(config-if)# dhcp-server 1 # цифра, которую вы назначали при создании dhcp-server
-(config-if)# exit
-```
-Используемая документация: 
-- 📖 [Настройка DHCP на Eco Router](https://docs.ecorouter.ru/%D0%A0%D1%83%D0%BA%D0%BE%D0%B2%D0%BE%D0%B4%D1%81%D1%82%D0%B2%D0%BE/11-DHCP/03-%D0%9D%D0%B0%D1%81%D1%82%D1%80%D0%BE%D0%B9%D0%BA%D0%B0-DHCP-%D1%81%D0%B5%D1%80%D0%B2%D0%B5%D1%80%D0%B0#%D0%BD%D0%B0%D1%81%D1%82%D1%80%D0%BE%D0%B9%D0%BA%D0%B0-dhcp-%D1%81%D0%B5%D1%80%D0%B2%D0%B5%D1%80%D0%B0)
-### Настройка DNS-сервера (bind) на HQ-SRV
-
 ```bash
 mkdir -p /etc/bind/zone
 vim /etc/bind/zone/db.au-team.irpo
