@@ -191,3 +191,4 @@ server {
 
 - 📖 [Документация Ansible](https://docs.ansible.com/)
 - 📰 [Обучение на Habr](https://habr.com/ru/articles/305400/)
+
